@@ -1,0 +1,6 @@
+This is simple libary management system.
+=> This project you can Register to login into the libary.
+=> After Register you can login when needed.
+=> You can see the available books in the libary
+=> You can borrow a book from the libary, and you can not take more than one same book. you have to return book to borrow same type of book
+=> You can donate book to the libary
