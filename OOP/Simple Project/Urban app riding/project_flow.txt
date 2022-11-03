@@ -1,0 +1,45 @@
+****************** Ridding app *****************
+
+App User
+    1.Rider
+        *Request for a Ride
+            -Location
+            -Balance
+    2.Driver
+        * Location
+        * License
+            -Validate License
+                > BRTA -> who checke tha validateion,
+            -Non valid License
+                > BRTA -> Taking a driving test based on score.if passed give a License according to email.
+        
+        *Vehicels
+            -Regiser a Vehicel
+                - Check License
+                    -if valid
+                        - Add new car by 3.Ride Manager
+
+            - Type
+                > car
+                    -> Start trip
+                        ~ status: availabe / unavailabe
+                    -> stop trip
+                        ~ status: unavailabe -> availabe
+                > bike
+                    -> Start trip
+                        ~ status: availabe / unavailabe
+                    -> stop trip
+                        ~ status: unavailabe -> availabe                
+                > cng
+                    -> Start trip
+                        ~ status: availabe / unavailabe
+                    -> stop trip
+                        ~ status: unavailabe -> availabe
+
+            -License Plate
+            -Driver
+    3.Ride Manager
+        * Store availabe car/bike/cng
+        * add Vehicel
+        * find a Vehicel
+
