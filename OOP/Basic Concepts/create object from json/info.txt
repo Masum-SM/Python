@@ -1,0 +1,10 @@
+[
+    {
+        "name" : "Watch",
+        "price" : 2100
+    },
+    {
+        "name" : "Sun glass",
+        "price" : 1600
+    }
+]
