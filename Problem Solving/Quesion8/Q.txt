@@ -1,0 +1,1 @@
+Extend the previous challenge so that it is possible to skip forward by an arbitrary number of pages. This should be achieved by allowing the user to enter a number before pressing the enter key. If the number is positive, the given number of pages are skipped. If there is no number, the next page is displayed.
