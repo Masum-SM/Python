@@ -1,0 +1,1 @@
+Further extend the book reader so that it can accept negative numbers for skipping pages. Entering -1 should go back to the previous page. There are many ways to achieve this.
