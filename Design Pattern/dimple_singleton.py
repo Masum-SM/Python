@@ -1,0 +1,1 @@
+from simple_singletone import grameen_phone
