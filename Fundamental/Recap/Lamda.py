@@ -40,3 +40,8 @@ for item in lst:
 new_lst = [lambda arg = x : arg*2 for x in lst]
 for item in new_lst:
     print(item())
+
+# ---------------> EXAMPLE 05 filter<-------------
+even_list = list(filter(lambda x : (x%2 == 0),lst)) # filter return value based on specific condition.
+print(even_list)
+
