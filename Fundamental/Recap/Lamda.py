@@ -27,3 +27,16 @@ print(_max(3,5))
 s = 'Phitron'
 new_str = lambda S : S.upper()[::-1] # start : end : step, here start and end is empty
 print(new_str(s))
+
+
+# ---------------> EXAMPLE 04<-------------
+lst = [2,3,4,5,6,7]
+def double(x):
+    return x*2
+for item in lst:
+    print(double(item))
+
+# using lambda function
+new_lst = [lambda arg = x : arg*2 for x in lst]
+for item in new_lst:
+    print(item())
