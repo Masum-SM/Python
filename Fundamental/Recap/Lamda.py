@@ -50,3 +50,15 @@ print(even_list)
 str_list = ['masum','nawrin','sultana','unus']
 nw_str = list(map(lambda x : x.upper(),str_list)) #map work with invidual value from list one after another.
 print(nw_str)
+
+
+# ---------------> EXAMPLE 07 reduce<-------------
+sum = 0
+for num in lst:
+    sum += num
+print(sum)
+
+from functools import reduce
+# using lambda function
+sum_ = reduce(lambda x , y : x + y , lst)
+print(sum_)
