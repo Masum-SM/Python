@@ -45,3 +45,8 @@ for item in new_lst:
 even_list = list(filter(lambda x : (x%2 == 0),lst)) # filter return value based on specific condition.
 print(even_list)
 
+
+# ---------------> EXAMPLE 06 map <-------------
+str_list = ['masum','nawrin','sultana','unus']
+nw_str = list(map(lambda x : x.upper(),str_list)) #map work with invidual value from list one after another.
+print(nw_str)
