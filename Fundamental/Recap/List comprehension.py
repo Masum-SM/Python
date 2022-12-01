@@ -52,3 +52,8 @@ output :
 [2, 4, 6, 8, 10, 12, 14]
 """
 
+
+# ------------------------> Example 05 : sequence of even number <------------------------
+
+d_by3_5 = [num for num in range(100) if num%3 ==0 if num%5 == 0]
+print(d_by3_5)
