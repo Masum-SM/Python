@@ -57,3 +57,12 @@ output :
 
 d_by3_5 = [num for num in range(100) if num%3 ==0 if num%5 == 0]
 print(d_by3_5)
+# output : [0, 15, 30, 45, 60, 75, 90]
+
+
+# ------------------------> Example 06 : even and odd <------------------------
+
+even_odd = ['even' if num%2 == 0 else 'odd' for num in range(10)]
+print(even_odd)
+
+# output : ['even', 'odd', 'even', 'odd', 'even', 'odd', 'even', 'odd', 'even', 'odd']
