@@ -66,3 +66,11 @@ even_odd = ['even' if num%2 == 0 else 'odd' for num in range(10)]
 print(even_odd)
 
 # output : ['even', 'odd', 'even', 'odd', 'even', 'odd', 'even', 'odd', 'even', 'odd']
+
+
+# ------------------------> Example 07 : make pair form two list <------------------------
+
+pair = [(x,y) for x in [1,2,3] for y in [5,6,7]]
+print(pair)
+
+# output : [(1, 5), (1, 6), (1, 7), (2, 5), (2, 6), (2, 7), (3, 5), (3, 6), (3, 7)]
