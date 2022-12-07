@@ -54,3 +54,11 @@ twoD_to_1D = [sublist for val in list_ for sublist in val]
 print(twoD_to_1D)
 
 # output : [1, 2, 3, 4, 5, 6, 6, 7, 8]
+
+
+# ----------------------> Example 05 <----------------
+word_list  = [['banana','mango'],['apple','jackfruit'],['goyava','grape']]
+nw_lst = [sublist for val in word_list for sublist in val if len(sublist)>5]
+print(nw_lst)
+
+# output : ['banana', 'jackfruit', 'goyava']
