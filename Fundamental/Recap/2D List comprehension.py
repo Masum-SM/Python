@@ -24,3 +24,24 @@ output
 [[0, 1, 0], [1, 0, 0], [0, 0, 0]] 
 
 """
+
+
+# ----------------------> Example 03 <----------------
+r,c = (3,3)
+liist = [[0]*c]*r
+print(liist)
+liist[0][0] = 1
+print(liist)
+
+print(id(liist[0])) #2755471505280
+print(id(liist[1])) #2755471505280
+
+
+
+""" 
+memory address is same
+output 
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]       
+[[1, 0, 0], [1, 0, 0], [1, 0, 0]] 
+here memory location of [0][0] , [1][1] and [2][2] is same
+"""
