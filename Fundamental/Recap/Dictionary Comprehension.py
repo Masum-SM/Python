@@ -4,3 +4,13 @@
 dct = {i : i+10 for i in range(10)}
 print(dct)
 # output : {0: 10, 1: 11, 2: 12, 3: 13, 4: 14, 5: 15, 6: 16, 7: 17, 8: 18, 9: 19}
+
+
+
+# ------------------------> Example 02 : dictonay for even age  <------------------------
+
+dct_name_age = {'masum':26,'nawrin':23,'afra':6,'arisha':1,'batchu':79,'shazeda':56}
+even_age = {k:v for k,v in dct_name_age.items() if v % 2 == 0}
+print(even_age)
+
+# output : {'masum': 26, 'afra': 6}
