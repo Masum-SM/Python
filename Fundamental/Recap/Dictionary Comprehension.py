@@ -31,3 +31,13 @@ younger_older = {k:('older' if v>50 else 'younger') for k,v in dct_name_age.item
 print(younger_older)
 
 # output : {'masum': 'younger', 'nawrin': 'younger', 'afra': 'younger', 'arisha': 'younger', 'batchu': 'older', 'shazeda': 'older'}
+
+
+
+
+# ------------------------> Example 05 : dictonay for even age and upper 20 <------------------------
+
+double_dct = {k1 : {k2 : k1*k2} for k2 in range(6) for k1 in range(6)}
+print(double_dct)
+
+# output : {0: {5: 0}, 1: {5: 5}, 2: {5: 10}, 3: {5: 15}, 4: {5: 20}, 5: {5: 25}}
