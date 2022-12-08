@@ -14,3 +14,12 @@ even_age = {k:v for k,v in dct_name_age.items() if v % 2 == 0}
 print(even_age)
 
 # output : {'masum': 26, 'afra': 6}
+
+
+
+# ------------------------> Example 03 : dictonay for even age and upper 20 <------------------------
+
+even_age_older = {k:v for k,v in dct_name_age.items() if v % 2 == 0 if v > 20}
+print(even_age_older)
+
+# output:{'masum': 26}
