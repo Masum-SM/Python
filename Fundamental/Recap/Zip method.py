@@ -22,3 +22,9 @@ print(list(zip(names,salaries)))
 new_dct = {name:salary for name,salary in zip(names,salaries)}
 print(new_dct)
 # output : {'masum': 10000, 'karim': 20000, 'halim':
+
+
+result = list(zip(names,salaries))
+name,salary = zip(*result)
+print(name) # output : ('masum', 'karim', 'halim')
+print(salary) # output : (10000, 20000, 30000)
