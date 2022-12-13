@@ -7,3 +7,16 @@ we can use another two keyword with try and except those are else and finally.
 else-when the code did not show any error then the else part will appear.
 Finally- the finally part always runnded, if error found or not.
 """
+
+
+# ---------------------------------> Example - 01 <---------------------------------------
+try:
+    x = 6/0
+    print(x)
+
+except:
+    print('Found error.')
+else:
+    print('No error found.')
+finally:
+    print('finally will always printed.')
