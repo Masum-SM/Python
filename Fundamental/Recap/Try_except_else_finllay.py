@@ -40,3 +40,11 @@ else:
     print('No error found.')
 finally:
     print('finally will always printed.')
+    
+    
+""" 
+output: 
+3.0
+No error found.
+finally will always printed.
+"""
