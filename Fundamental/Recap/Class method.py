@@ -21,3 +21,9 @@ else:
     print('No error found.')
 finally:
     print('finally will always printed.')
+
+""" 
+output: 
+Found error.
+finally will always printed.
+"""
