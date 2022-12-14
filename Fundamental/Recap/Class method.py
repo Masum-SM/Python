@@ -27,3 +27,15 @@ output:
 Found error.
 finally will always printed.
 """
+
+# ---------------------------------> Example - 02 <---------------------------------------
+try:
+    x = 6/2
+    print(x)
+
+except:
+    print('Found error.')
+else:
+    print('No error found.')
+finally:
+    print('finally will always printed.')
