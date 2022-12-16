@@ -13,3 +13,5 @@ print(df_head.groupby('HighBP').sum()) #sum for individual value
 print(df_head.groupby('HighBP').mean()) #mean for individual value
 
 print(df_head['CholCheck'].value_counts()) # how many types of number & how many number in same type in a column CholChek,it shows
+
+print(df_head['Education']) # finding single column
