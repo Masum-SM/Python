@@ -15,3 +15,6 @@ print(df_head.groupby('HighBP').mean()) #mean for individual value
 print(df_head['CholCheck'].value_counts()) # how many types of number & how many number in same type in a column CholChek,it shows
 
 print(df_head['Education']) # finding single column
+
+df_head.sort_values('Income',ascending=True, inplace= True) # inplace = True means it change the main data set. and inplace false means ,it do not change the main dataset.it returns a new data set that sort in_order to Income.
+# print(df_head)
