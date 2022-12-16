@@ -25,3 +25,6 @@ df_head.sort_values('Income',ascending=True, inplace= True) # inplace = True mea
 dropna()--> it found NaN in any coloumn, dropna drop the coloumn.
 fillna()--> if found NaN in any row, fillna will fill the place with any number.
 """
+
+print(df_head.dropna())
+print(df_head.fillna(0))
