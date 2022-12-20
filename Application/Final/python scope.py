@@ -18,3 +18,14 @@ def outer_fun():
     inner_fun()
 outer_fun()
 print(e)
+
+
+"""  
+In our above function, The built in e is printed first, after that it print the innter e = 77.98 and lastly it print the global value of e = 33.23.
+here, in inner funtion the value of e is changed, and if we remove or comment the e = 77.98 that is enclosed scope then the print function in inner funtion will print the local scope of outer function e = 43.23
+so we can say ,priority level of scope : enclosed>local>global>builtin
+output:
+2.718281828459045
+77.98
+33.23
+"""
