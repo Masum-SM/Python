@@ -37,3 +37,6 @@ t1.join()
 t2.join()
 t3.join()
 t4.join()
+
+end_time = perf_counter()
+print(f"Total Time = {end_time-start_time}")
