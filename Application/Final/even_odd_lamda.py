@@ -1,1 +1,9 @@
 
+""" 
+QUESTION: 
+You need to write a python lambda function to tell whether a number is even or not. If it is even, return “Yes” otherwise “No”.							5
+
+print(even_odd(5))
+Output:
+No
+"""
