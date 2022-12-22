@@ -7,3 +7,6 @@ print(even_odd(5))
 Output:
 No
 """
+
+even_or_odd = lambda num : "Yes" if(num % 2==0) else "No"
+print(even_or_odd(5))
