@@ -12,3 +12,6 @@ class Logitech(Mouse): #Derived class
     def __init__(self, brand, wire_type, color,price) -> None:
         self.price = price
         super().__init__(brand, wire_type, color) # This is supper function that allow the derived class to access attribute and method of base class.
+        
+    def __repr__(self) -> str: 
+        return f"Brand Name : {self.brand}\nWire Type : {self.wire_type}\nColor : {self.color}\nPrice : {self.price} " 
