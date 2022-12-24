@@ -17,3 +17,8 @@ class Logitech(Mouse): #Derived class
         return f"Brand Name : {self.brand}\nWire Type : {self.wire_type}\nColor : {self.color}\nPrice : {self.price} " 
 mouse_M820 = Logitech('Logitech','Wireless','gray_balck',980)
 print(mouse_M820)
+
+
+""" 
+Multiple Inheritance: When a class can be derived from more than one base class this type of inheritance is called multiple inheritances. In multiple inheritances, all the features of the base classes are inherited into the derived class.  
+"""
