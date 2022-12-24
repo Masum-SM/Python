@@ -15,3 +15,5 @@ class Logitech(Mouse): #Derived class
         
     def __repr__(self) -> str: 
         return f"Brand Name : {self.brand}\nWire Type : {self.wire_type}\nColor : {self.color}\nPrice : {self.price} " 
+mouse_M820 = Logitech('Logitech','Wireless','gray_balck',980)
+print(mouse_M820)
