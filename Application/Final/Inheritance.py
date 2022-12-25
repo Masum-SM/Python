@@ -42,3 +42,6 @@ class Child(Father,Mother): #Derived class
         self.age = age
         Father.__init__(self,father_name)
         Mother.__init__(self,mother_name)
+        
+    def __repr__(self) -> str:
+        return f"Child name is {self.name} and Age is {self.age} "
