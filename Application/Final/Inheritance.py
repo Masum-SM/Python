@@ -45,3 +45,8 @@ class Child(Father,Mother): #Derived class
         
     def __repr__(self) -> str:
         return f"Child name is {self.name} and Age is {self.age} "
+    
+    
+Masum = Child('Nawrin Sultana',23,'Abdullah Shbuj','Raziya Sultana')
+print(Masum)
+print(Masum.name,Masum.age,Masum.fatherName,Masum.motherName)
