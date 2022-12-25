@@ -27,3 +27,9 @@ class Father: #Base class
     def __init__(self,father_name) -> None:
         self.fatherName = father_name
         print("Father name is ",self.fatherName)
+
+        
+class Mother: #Base class
+    def __init__(self,mother_name) -> None:
+        self.motherName = mother_name
+        print("Mother name is ",self.motherName)
