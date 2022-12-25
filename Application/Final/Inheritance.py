@@ -33,3 +33,12 @@ class Mother: #Base class
     def __init__(self,mother_name) -> None:
         self.motherName = mother_name
         print("Mother name is ",self.motherName)
+        
+    
+ 
+class Child(Father,Mother): #Derived class
+    def __init__(self, name,age,father_name,mother_name) -> None:
+        self.name = name
+        self.age = age
+        Father.__init__(self,father_name)
+        Mother.__init__(self,mother_name)
