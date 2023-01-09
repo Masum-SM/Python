@@ -48,4 +48,33 @@ class Task:
             print("Task Updated successfully.")
         else:
             print("No Task to update.")
+            
+            
+            
+    def complete_task(self):
+
+        is_upadatabe = False
+
+        for task in self.all_task:
+            if task["Task_done"] == False:
+                is_upadatabe = True   
+
+        if is_upadatabe == True:
+
+            print("Select Which task to complete.")
+            no = -1;
+            new_dict = {}
+            for task in self.all_task:
+                no += 1;
+                print()
+                new_dict = {"Task No" : no+1}
+                new_dict.update(task)
+                # task["Task No - "] = no+1;
+                for key in new_dict:
+                    if(task["Task_done"] == False):
+                        print(f"{key} - {new_dict[key]}")
+                print()
+
+                self.new_task_list.append(new_dict)
+
         
