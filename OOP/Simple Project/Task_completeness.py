@@ -130,3 +130,27 @@ class AllTask(Task):
             print("No Completed Task.")
             print()
     
+
+
+while True:
+    task = AllTask()
+    print()
+    print('1.Add new task.\n2.Show all tasks\n3.Show incompleted tasks.\n4.Show completed tasks.\n5.Update task.\n6.Mark a task completed.')
+    print()
+    option = input('Enter Option:')
+    if option == '1':
+        task.create_task()
+    elif option == '2':
+        task.show_all_task()
+    elif option == '3':
+        task.show_incompleted_task()
+    elif option == '4':
+        task.show_completed_task()
+    elif option == '5':
+        task.update_task()
+    elif option == '6':
+        task.complete_task();
+    else:
+        break
+    
+
