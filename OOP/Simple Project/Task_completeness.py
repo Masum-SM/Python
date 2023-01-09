@@ -48,9 +48,9 @@ class Task:
             print("Task Updated successfully.")
         else:
             print("No Task to update.")
-            
-            
-            
+        
+
+
     def complete_task(self):
 
         is_upadatabe = False
@@ -77,8 +77,6 @@ class Task:
 
                 self.new_task_list.append(new_dict)
 
-        
-        
             task_num = int(input("Enter Task No : "))
             for task in self.all_task:
                 for new_task in self.new_task_list: 
