@@ -97,3 +97,13 @@ class AllTask(Task):
         print()
         print("Created Task Successfully.")
         
+        
+    def show_all_task(self):
+        print()
+        for task in self.all_task:
+            for key in task:
+                print(f"{key} - {task[key]}")
+
+            print()
+            
+            
