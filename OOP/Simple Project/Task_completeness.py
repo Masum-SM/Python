@@ -13,3 +13,11 @@ class Task:
         self.Task_done = False
         self.Completed_time= "NA"
         
+    def update_task(self):
+        no = -1;
+        new_dict = {}
+        is_upadatabe = False
+
+        for task in self.all_task:
+            if task["Task_done"] == False:
+                is_upadatabe = True
