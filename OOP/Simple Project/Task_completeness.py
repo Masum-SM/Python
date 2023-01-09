@@ -21,3 +21,21 @@ class Task:
         for task in self.all_task:
             if task["Task_done"] == False:
                 is_upadatabe = True
+
+                
+        if is_upadatabe == True:
+            print("Select Which Task To Update.")
+            for task in self.all_task:
+                no += 1;
+                print()
+                new_dict = {"Task No" : no+1}
+                new_dict.update(task)
+                # task["Task No - "] = no+1;
+                for key in new_dict:
+                    if(task["Task_done"] == False):
+                        print(f"{key} - {new_dict[key]}")
+                print()
+                self.new_task_list.append(new_dict)
+
+            task_num = int(input("Enter Task No : "))
+            task_new_name = input("Enter updated name : ")
