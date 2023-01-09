@@ -78,3 +78,13 @@ class Task:
                 self.new_task_list.append(new_dict)
 
         
+        
+            task_num = int(input("Enter Task No : "))
+            for task in self.all_task:
+                for new_task in self.new_task_list: 
+                    if(task_num == new_task["Task No"] and task["id"] == new_task["id"] and task["Task_done"] == False):
+                        task["Task_done"] = True
+                        task["Completed_time"] = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+            print("Task Completed successfully.")
+        else:
+            print("No Task To Complete.")
