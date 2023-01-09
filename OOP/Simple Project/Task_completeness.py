@@ -86,9 +86,7 @@ class Task:
             print("Task Completed successfully.")
         else:
             print("No Task To Complete.")
-            
-            
-            
+
 class AllTask(Task):
 
     def create_task(self):
@@ -97,7 +95,7 @@ class AllTask(Task):
         print()
         print("Created Task Successfully.")
         
-        
+    
     def show_all_task(self):
         print()
         for task in self.all_task:
@@ -105,8 +103,7 @@ class AllTask(Task):
                 print(f"{key} - {task[key]}")
 
             print()
-            
-            
+
     def show_incompleted_task(self):
         print()
         is_exist = False
@@ -116,3 +113,20 @@ class AllTask(Task):
                     is_exist = True
                     print(f"{key} - {task[key]}")
             print()
+
+        if is_exist == False:
+            print("No Incompleted Task.")
+            print()
+       
+    def show_completed_task(self):
+        is_exist = False
+        for task in self.all_task:
+            for key in task:
+                if(task["Task_done"] == True):
+                    is_exist = True
+                    print(f"{key} - {task[key]}")
+            print()
+        if is_exist == False:
+            print("No Completed Task.")
+            print()
+    
