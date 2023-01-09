@@ -107,3 +107,12 @@ class AllTask(Task):
             print()
             
             
+    def show_incompleted_task(self):
+        print()
+        is_exist = False
+        for task in self.all_task:
+            for key in task:
+                if(task["Task_done"] == False):
+                    is_exist = True
+                    print(f"{key} - {task[key]}")
+            print()
