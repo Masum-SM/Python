@@ -86,3 +86,14 @@ class Task:
             print("Task Completed successfully.")
         else:
             print("No Task To Complete.")
+            
+            
+            
+class AllTask(Task):
+
+    def create_task(self):
+        task_name = input("Enter New Task : ")
+        self.all_task.append({"id":str(uuid4()),"Task_Name":task_name,"Created_time":datetime.now().strftime("%d/%m/%Y %H:%M:%S") ,"Updated_time":"NA","Task_done":False,"Completed_time":"NA"})
+        print()
+        print("Created Task Successfully.")
+        
