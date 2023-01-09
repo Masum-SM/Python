@@ -39,3 +39,15 @@ class Task:
 
             task_num = int(input("Enter Task No : "))
             task_new_name = input("Enter updated name : ")
+
+            
+            
+             for task in self.all_task:
+                for new_task in self.new_task_list: 
+                    if(task_num == new_task["Task No"] and task["id"] == new_task["id"] and task["Task_done"] == False):
+                        task["Task_Name"] = task_new_name
+                        task["Updated_time"] = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+
+            print("Task Updated successfully.")
+        else:
+            print("No Task to update.")
